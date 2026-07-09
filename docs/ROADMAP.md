@@ -13,8 +13,8 @@ Already mostly done via the initial scaffold.
 - [x] pnpm monorepo (`apps/web`, `apps/worker`, `packages/shared`)
 - [x] Shared types (`Houseguest`, `ExtractedInteraction`, `TweetExtraction`, `RawTweet`)
 - [x] `.env.example` with required vars
-- [ ] `.nvmrc` pinned to a specific Node LTS version
-- [ ] Repo pushed to GitHub (done — `nathan-fedzen/bb-tracker`)
+- [x] `.nvmrc` pinned to a specific Node LTS version (24.12.0)
+- [x] Repo pushed to GitHub (`nathan-fedzen/bb-tracker`)
 
 **Done when:** `pnpm install` succeeds from a clean clone with no manual fixes.
 
