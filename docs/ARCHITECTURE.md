@@ -42,6 +42,14 @@ out.
 **Storage:** plain Postgres, no graph DB. An `interactions` edge table is
 sufficient at this scale and far simpler to operate than Neo4j etc.
 
+**Graph rendering:** PixiJS + d3-force, not D3/SVG. d3-force handles the
+force-directed layout math only (node/edge positions); PixiJS does the
+actual canvas/WebGL rendering. This trades the more common D3+SVG default
+for a pairing that renders at 60fps and leaves room for recency-based
+effects (pulsing nodes on new interactions, glow/fade on edges) without
+being capped by SVG DOM performance. Also plays to existing PixiJS
+experience rather than requiring a new rendering skillset.
+
 ## Rough cost estimate (5 accounts, ~150 tweets/day)
 
 | Component | Estimate |
